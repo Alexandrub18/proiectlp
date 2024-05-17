@@ -7,4 +7,4 @@ if __name__ == "__main__":
     app.wm_title("2048")
     app.minsize(430, 470)
     app.mainloop()
-    # start = Game2048()
+    
