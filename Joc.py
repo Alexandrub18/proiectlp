@@ -142,12 +142,12 @@ class Joc(Tk):
         cellwidth = 105
         cellheight = 105
         self.square = {}
-        for column in range(4):
-            for row in range(4):
+        for column in range(2,3):
+            for row in range(2,3):
                 a = column * cellwidth
                 b = row * cellheight
-                c = a + cellwidth - 5
-                d = b + cellheight - 5
+                c = a + cellwidth - 105
+                d = b + cellheight - 50
                 self.square[row, column] = self.canvas.create_rectangle(a, b, c, d, fill="#ede0c8", tags="rect",
                                                                         outline="")
                 self.canvas.create_text((a + c) / 2, (b + d) / 2, font=("Arial", 36), fill="#494949",
